@@ -1,0 +1,86 @@
+/* Стили Профиль */
+.profile {
+    background-color: #1A2238;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+}
+.profile__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    height: 50%;
+    justify-items: center
+}
+#profile__el-container {
+    background-color: #1A2238;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #FF6B35;
+    gap: 5px;
+    width: 85%;
+}
+.profile__el {
+    background-color: #0F1523;
+    width: 85%;
+    padding: 15px;
+    margin: 20px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.profile__el-title {
+    color: #FF6B35;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', Times, serif;
+    border-bottom: 2px solid #FF6B35;
+    width: 90%;
+    text-align: center;
+}
+.profile__el-main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center
+
+}
+.profile__main-text {
+    color: #FFFFFF;
+    font-family: 'Roboto', Times, serif;
+    
+}
+.purchase__container-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.purchase__el {
+    display: flex;
+    flex-direction: row;
+    background-color: #1A2238;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #FF6B35;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+.purchase__el-text {
+    color: #FFFFFF;
+    font-family: 'Roboto', Times, serif;
+}
+.profile__btn {
+    padding: 10px;
+    background-color: #FF6B35;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    text-align: center;
+}

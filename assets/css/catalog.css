@@ -1,0 +1,128 @@
+/* Каталог */
+.catalog__container {
+    background-color: #1A2238;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.filter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.filter__title {
+    color: #FF6B35;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', Times, serif;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #FF6B35;
+    text-align: center;
+}
+.filter__main {
+    background-color: #0F1523;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Roboto', Times, serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.filter__main-input {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center
+}
+.filter__input-checkbox {
+    height: 20px;
+    width: 20px;
+}
+.filter__input-label {
+    color: #FFFFFF;
+}
+
+.games__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+    width: 95%;
+    margin: 20px 0;
+}
+
+.popular_card-link {
+    text-decoration: none;
+}
+
+.popular__card {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0F1523;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.popular_card-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.popular__card-text {
+    color: #FFFFFF;
+    font-family: 'Roboto', Times, serif;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.stars-active {
+    background-color: #FF6B35;
+    border-radius: 20px;
+
+}
+
+.stars {
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.popular__card-btn {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #FF6B35;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+.filter__burger {
+    display: none;
+   }
+
+
+@media screen and (width < 1200px) {
+    .filter__burger {
+        display: flex;
+   }
+    .burger__btn {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #FF6B35;
+    color: #FFFFFF;
+    border-radius: 10px;
+    text-decoration: none;
+   }
+
+   .filter__main {
+    display: none;
+   }
+    
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestGames - Авторизация</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="../assets/media/images/logo/logo.png" alt="Логотип" class="header__logo-img">
+            <a href="index.html" class="logo__title-link">BestGames</a>
+        </div>
+        <div class="header__navmenu">
+            <a href="index.html#search" class="navmenu__el">Поиск</a>
+            <a href="login.html" class="navmenu__el">Войти</a>
+            <a href="profile.html" class="navmenu__el">Личный кабинет</a>
+            <a href="catalog.html" class="navmenu__el">Каталог игр</a>
+        </div>
+        <div class="header__burger">
+            <span class="burger__el"></span>
+            <span class="burger__el"></span>
+            <span class="burger__el"></span>
+        </div>
+    </header>
+
+
+    <main>
+<!-- Основной блок страницы логина -->
+        <div class="login">
+            <div class="login__form">
+                <h3 class="login__form-title">Авторизация</h3>
+                <!-- Форма авторизации -->
+                <form action="#" class="login__form-main">
+                    <!-- Поля ввода -->
+                    <input type="email" class="login__form-input" placeholder="best@games.ru" name="user_email">
+                    <input type="password" class="login__form-input" placeholder="*********" name="password">
+                    <!-- Кнопки -->
+                    <a class="login__form-btn">
+                        Войти
+                    </a>
+                    
+                    <p class="login__form-linktext">
+                        Забыли пароль?
+                        <a href="register.html" class="login__form-link">Восстановить</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+<!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="footer__section">
+            <p class="footer__section-text">Контакты</p>
+            <p class="footer__section-text">Телефон (8-800-999-55-99)</p>
+            <p class="footer__section-text">E-Mail: best@games.ru</p>
+        </div>
+        <div class="footer__section">
+            <p class="footer__section-text">Клиентам</p>
+            <p class="footer__section-text">Партнёрам</p>
+            <p class="footer__section-text">О нас</p>
+        </div>
+        <div class="footer__section">
+            <!-- Навигационное меню -->
+            <ul class="foouter__navmenu">
+                <li class="foouter__navmenu-el"><a href="index.html" class="footer__navmenu-link">Главная</a></li>
+                <li class="foouter__navmenu-el"><a href="register.html" class="footer__navmenu-link">Регистрация</a>
+                </li>
+                <li class="foouter__navmenu-el"><a href="login.html" class="footer__navmenu-link">Авторизация</a></li>
+                <li class="foouter__navmenu-el"><a href="profile.html" class="footer__navmenu-link">Личный кабинет</a>
+                </li>
+                <li class="foouter__navmenu-el"><a href="index.html#search" class="footer__navmenu-link">Поиск</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

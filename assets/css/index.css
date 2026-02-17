@@ -1,0 +1,358 @@
+/* Тёмная тема - главная */
+
+
+/* Слайдер */
+.slider {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1A2238;
+}
+
+.indicators {
+    background-color: #0F1523;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #FF6B35;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.indicators__dot-active {
+    width: 25px;
+    height: 25px;
+    background-color: #FF6B35;
+    border-radius: 50%;
+    border: 1px solid white;
+
+}
+
+.indicators__dot {
+    width: 25px;
+    height: 25px;
+    background-color: #1A2238;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.slider__grid {
+    background-color: #1A2238;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: auto;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.slide__controls {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: #FF6B35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    background-color: #0F1523;
+    width: 90%;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 80%;
+}
+
+.slide_main {
+    background-color: #0F1523;
+    border-radius: 20px;
+    font-family: 'Roboto';
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between
+}
+
+.slide__main-img {
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.slide__main-info {
+    color: #FFFFFF;
+    padding: 0 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.slide__btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide__main-btn {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #FF6B35;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+/* Поиск */
+.search {
+    background-color: #0F1523;
+    display: flex;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.search__title {
+    color: #FF6B35;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', Times, serif;
+    border-bottom: 2px solid #FF6B35;
+}
+
+.search__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    justify-content: center
+}
+
+.search__container-input {
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #1A2238;
+    width: 30%;
+    animation: rgb 1s infinite;
+}
+
+.search__container-input::placeholder {
+    color: #8B949E;
+
+}
+
+.search__container-btn {
+    padding: 10px;
+    background-color: #FF6B35;
+    border-radius: 20px;
+    width: 100px;
+    text-decoration: none;
+}
+/* Преимущества */
+.adventages {
+    background-color: #1A2238;
+    height: auto;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 0;
+}
+
+.adventages__title {
+    color: #FF6B35;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', Times, serif;
+    border-bottom: 2px solid #FF6B35;
+}
+
+.adventages__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    justify-items: center
+}
+
+.adventages__card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    height: auto;
+    background-color: #0F1523;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.adventages__card-container {
+    background-color: white;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    height: 70px;
+    border-radius: 10px;
+
+}
+
+.adventages__card-img {
+    height: 90%;
+}
+
+.adventages__card-textcontainer {
+    display: flex;
+    font-family: 'Roboto', Times, serif;
+}
+
+.adventages__card-text {
+    color: #FFFFFF;
+    font-family: 'Roboto', Times, serif;
+    align-content: center;
+}
+/* Блок популярных игр */
+.popular {
+    background-color: #0F1523;
+    height: auto;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 0;
+}
+
+.popular__title {
+    color: #FF6B35;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', Times, serif;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #FF6B35;
+}
+
+.popular__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+    width: 95%;
+}
+
+.popular_card-link {
+    text-decoration: none;
+}
+
+.popular__card {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #1A2238;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.popular_card-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.popular__card-text {
+    color: #FFFFFF;
+    font-family: 'Roboto', Times, serif;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+/* Активные звезды */
+.stars-active {
+    background-color: #FF6B35;
+    border-radius: 20px;
+
+}
+/* Неактивные звезды */
+.stars {
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.popular__card-btn {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #FF6B35;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+/* Партнёры */
+.partners {
+    background-color: #1A2238;
+    height: auto;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 0;
+}
+
+.partners__title {
+    color: #FF6B35;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', Times, serif;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #FF6B35;
+}
+
+.partners__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 95%;
+    justify-items: center
+}
+
+.partners__image-container {
+    margin-bottom: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center
+}
+
+.partners__card-img {
+    width: 80%;
+    height: 150px;
+}
+
+@keyframes rgb {
+    0% {
+        border: 3px solid rgb(231, 108, 6);
+    }
+    25% {
+        border: 3px solid rgb(180, 84, 5);
+    }
+
+    50% {
+        border: 3px solid rgb(139, 65, 4);
+    }
+
+    75% {
+        border: 3px solid rgb(180, 84, 5);
+    }
+
+    100% {
+        border: 3px solid rgb(231, 108, 6);
+    }
+}

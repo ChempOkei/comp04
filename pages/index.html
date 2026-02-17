@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestGames - Главная</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="../assets/media/images/logo/logo.png" alt="Логотип" class="header__logo-img">
+            <a href="index.html" class="logo__title-link">BestGames</a>
+        </div>
+        <div class="header__navmenu">
+            <a href="index.html#search" class="navmenu__el">Поиск</a>
+            <a href="login.html" class="navmenu__el">Войти</a>
+            <a href="profile.html" class="navmenu__el">Личный кабинет</a>
+            <a href="catalog.html" class="navmenu__el">Каталог игр</a>
+        </div>
+        <div class="header__burger">
+            <span class="burger__el"></span>
+            <span class="burger__el"></span>
+            <span class="burger__el"></span>
+        </div>
+    </header>
+    <main>
+        <!-- Слайдер -->
+        <div class="slider">
+            <div class="slider__grid">
+                <div class="slide__controls">
+                    <span class="slide__controls-btn">
+                        &lt</span>
+                </div>
+                <!-- Отдельный слайд -->
+                <div class="slide">
+                    <div class="slide_main">
+                        <img src="../assets/media/images/slider/slide1.jpg" alt="Слайд 1" class="slide__main-img">
+                        <p class="slide__main-info">Название: Cyberpunk 2077: Phantom Liberty</p>
+                        <p class="slide__main-info">Цена: 2 999 ₽</p>
+                        <div class="slide__btn-container">
+                            <a href="catalog.html" class="slide__main-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_main">
+                        <img src="../assets/media/images/slider/slide2.jpg" alt="Слайд 2" class="slide__main-img">
+                        <p class="slide__main-info">Название: Elden Ring</p>
+                        <p class="slide__main-info">Цена: 3 499 ₽</p>
+                        <div class="slide__btn-container">
+                            <a href="catalog.html" class="slide__main-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_main">
+                        <img src="../assets/media/images/slider/slide3.jpg" alt="Слайд 3" class="slide__main-img">
+                        <p class="slide__main-info">Название: Diablo IV</p>
+                        <p class="slide__main-info">Цена: 3 999 ₽</p>
+                        <div class="slide__btn-container">
+                            <a href="catalog.html" class="slide__main-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide__controls">
+                    <span class="slide__controls-btn">&gt</span>
+                </div>
+            </div>
+            <div class="indicators">
+                
+                <div class="indicators__dot-active"></div>
+                <div class="indicators__dot"></div>
+                <div class="indicators__dot"></div>
+
+            </div>
+        </div>
+        <!-- Быстрый поиск -->
+        <div class="search" id="search">
+            <h3 class="search__title">Быстрый поиск по жанрам</h3>
+            <div class="search__container">
+                <input id="search_input" type="search" class="search__container-input" list="games" placeholder="Жанр игры..">
+                <button class="search__container-btn">Поиск</button>
+            </div>
+            <datalist id="games">
+                <option value="RPG"></option>
+                <option value="Action/RPG"></option>
+                <option value="Souls-like"></option>
+
+            </datalist>
+        </div>
+<!-- Преимущества -->
+        <div class="adventages">
+            <h3 class="adventages__title">Наши преимущества</h3>
+            <div class="adventages__grid">
+                <div class="adventages__card">
+                    <div class="adventages__card-container">
+                        <img src="../assets/media/images/infographics/prices.svg" alt="Преимущество 1"
+                            class="adventages__card-img">
+                    </div>
+                    <div class="adventages__card-textcontainer">
+                        <p class="adventages__card-text">
+                            Привлекательные цены
+                        </p>
+                    </div>
+                </div>
+                <div class="adventages__card">
+                    <div class="adventages__card-container">
+                        <img src="../assets/media/images/infographics/discounts.svg" alt="Преимущество 2"
+                            class="adventages__card-img">
+                    </div>
+                    <div class="adventages__card-textcontainer">
+                        <p class="adventages__card-text">
+                            Ежемесячные акции
+                        </p>
+                    </div>
+                </div>
+                <div class="adventages__card">
+                    <div class="adventages__card-container">
+                        <img src="../assets/media/images/infographics/support.svg" alt="Преимущество 3"
+                            class="adventages__card-img">
+                    </div>
+                    <div class="adventages__card-textcontainer">
+                        <p class="adventages__card-text">
+                            Круглосуточная поддержка
+                        </p>
+                    </div>
+                </div>
+                <div class="adventages__card">
+                    <div class="adventages__card-container">
+                        <img src="../assets/media/images/infographics/purchase.svg" alt="Преимущество 4"
+                            class="adventages__card-img">
+                    </div>
+                    <div class="adventages__card-textcontainer">
+                        <p class="adventages__card-text">
+                            Быстрая покупка
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Популярные игры -->
+        <div class="popular">
+            <h3 class="popular__title">Популярные игры</h3>
+            <div class="popular__grid">
+                <a href="catalog.html" class="popular_card-link">
+                    <!-- Карточка с игрой -->
+                    <div class="popular__card">
+                        <img src="../assets/media/images/games/image2.jpg" alt="Популярная игра 1"
+                            class="popular_card-img">
+                        <p class="popular__card-text">Cyberpunk 2077</p>
+                        <p class="popular__card-text">Жанр: Action/RPG</p>
+                        <p class="popular__card-text">Разработчик: CD Projekt Red</p>
+                        <div class="popular__card-text">Рейтинг:
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars">
+                        </div>
+                        <p class="popular__card-text">Цена: 2 999 ₽</p>
+                        <button class="popular__card-btn">Подробнее</button>
+                    </div>
+                </a>
+                <a href="catalog.html" class="popular_card-link">
+                    <div class="popular__card">
+                        <img src="../assets/media/images/games/image3.jpg" alt="Популярная игра 2"
+                            class="popular_card-img">
+                        <p class="popular__card-text">Elden Ring</p>
+                        <p class="popular__card-text">Жанр: Souls-like RPG</p>
+                        <p class="popular__card-text">Разработчик: FromSoftware</p>
+                        <div class="popular__card-text">Рейтинг:
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                        </div>
+                        <p class="popular__card-text">Цена: 3 499 ₽</p>
+                        <button class="popular__card-btn">Подробнее</button>
+                    </div>
+                </a>
+                <a href="catalog.html" class="popular_card-link">
+                    <div class="popular__card">
+                        <img src="../assets/media/images/games/image5.jpg" alt="Популярная игра 3"
+                            class="popular_card-img">
+                        <p class="popular__card-text">The Witcher 3: Wild Hunt</p>
+                        <p class="popular__card-text">Жанр: RPG</p>
+                        <p class="popular__card-text">Разработчик: CD Projekt Red</p>
+                        <div class="popular__card-text">Рейтинг:
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                        </div>
+                        <p class="popular__card-text">Цена: 1 299 ₽</p>
+                        <button class="popular__card-btn">Подробнее</button>
+                    </div>
+                </a>
+                <a href="catalog.html" class="popular_card-link">
+                    <div class="popular__card">
+                        <img src="../assets/media/images/games/image1.jpg" alt="Популярная игра 4"
+                            class="popular_card-img">
+                        <p class="popular__card-text">Assassin's Creed Valhalla</p>
+                        <p class="popular__card-text">Жанр: Action/RPG</p>
+                        <p class="popular__card-text">Разработчик: Ubisoft</p>
+                        <div class="popular__card-text">Рейтинг:
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars">
+                        </div>
+                        <p class="popular__card-text">Цена: 2 799 ₽</p>
+                        <button class="popular__card-btn">Подробнее</button>
+                    </div>
+                </a>
+                <a href="catalog.html" class="popular_card-link">
+                    <div class="popular__card">
+                        <img src="../assets/media/images/games/image4.jpg" alt="Популярная игра 5"
+                            class="popular_card-img">
+                        <p class="popular__card-text">Diablo IV</p>
+                        <p class="popular__card-text">Жанр: Action/RPG</p>
+                        <p class="popular__card-text">Разработчик: Blizzard Entertainment</p>
+                        <div class="popular__card-text">Рейтинг:
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars-active">
+                            <img src="../assets/media/images/icons/star.svg" alt="Звезда" class="stars">
+                        </div>
+                        <p class="popular__card-text">Цена: 3 999 ₽</p>
+                        <button class="popular__card-btn">Подробнее</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Партнёры -->
+        <div class="partners">
+            <h3 class="partners__title">
+                Наши партнёры
+            </h3>
+            <div class="partners__grid">
+                <!-- Карточка партнёра -->
+                <div class="partners__image-container">
+                    <img src="../assets/media/images/partners/max-app-icon-on-a-transparent-background-free-.png"
+                        alt="Партнёр1" class="partners__card-img">
+                </div>
+                <div class="partners__image-container">
+                    <img src="../assets/media/images/partners/Steam_icon_logo.svg.png" alt="Партнёр1"
+                        class="partners__card-img">
+                </div>
+                <div class="partners__image-container">
+                    <img src="../assets/media/images/partners/Xbox_logo_(2019).svg.png" alt="Партнёр1"
+                        class="partners__card-img">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="footer__section">
+            <p class="footer__section-text">Контакты</p>
+            <p class="footer__section-text">Телефон (8-800-999-55-99)</p>
+            <p class="footer__section-text">E-Mail: best@games.ru</p>
+        </div>
+        <div class="footer__section">
+            <p class="footer__section-text">Клиентам</p>
+            <p class="footer__section-text">Партнёрам</p>
+            <p class="footer__section-text">О нас</p>
+        </div>
+        <div class="footer__section">
+            <ul class="foouter__navmenu">
+                <li class="foouter__navmenu-el"><a href="index.html" class="footer__navmenu-link">Главная</a></li>
+                <li class="foouter__navmenu-el"><a href="register.html" class="footer__navmenu-link">Регистрация</a>
+                </li>
+                <li class="foouter__navmenu-el"><a href="login.html" class="footer__navmenu-link">Авторизация</a></li>
+                <li class="foouter__navmenu-el"><a href="profile.html" class="footer__navmenu-link">Личный кабинет</a>
+                </li>
+                <li class="foouter__navmenu-el"><a href="index.html#search" class="footer__navmenu-link">Поиск</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

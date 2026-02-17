@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestGames - Административная Панель </title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="../assets/media/images/logo/logo.png" alt="Логотип" class="header__logo-img">
+            <a href="index.html" class="logo__title-link">BestGames</a>
+        </div>
+        <div class="header__navmenu">
+            <a href="index.html#search" class="navmenu__el">Поиск</a>
+            <a href="login.html" class="navmenu__el">Войти</a>
+            <a href="profile.html" class="navmenu__el">Личный кабинет</a>
+            <a href="catalog.html" class="navmenu__el">Каталог игр</a>
+        </div>
+        <div class="header__burger">
+            <span class="burger__el"></span>
+            <span class="burger__el"></span>
+            <span class="burger__el"></span>
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="admin">
+            <div class="admin__form">
+                <h3 class="admin__form-title">Административная Панель</h3>
+                <!-- Форма админ-панели -->
+                <form action="#" class="admin__form-main">
+                    <input type="text" class="admin__form-input" placeholder="Название игры"  name="gamename">
+                    <input type="text" class="admin__form-input" placeholder="Жанр"name="janre">
+                    <div class="admin__form-img">
+                        <label class="form__img-label" for="img">Выберите изображение</label>
+                        <input id="img" accept="image/*" type="file" class="admin__form-input" name="img">
+                    </div>
+                    <input type="text" class="admin__form-input" placeholder="Компания-Разработчик" name="company_name">
+                    <input type="text" class="admin__form-input" placeholder="Описание" name="description">
+                    <input type="number" class="admin__form-input" placeholder="Стоимость" name="price">
+                    <a class="admin__form-btn">
+                        Добавить
+                    </a>
+
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+<!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="footer__section">
+            <p class="footer__section-text">Контакты</p>
+            <p class="footer__section-text">Телефон (8-800-999-55-99)</p>
+            <p class="footer__section-text">E-Mail: best@games.ru</p>
+        </div>
+        <div class="footer__section">
+            <p class="footer__section-text">Клиентам</p>
+            <p class="footer__section-text">Партнёрам</p>
+            <p class="footer__section-text">О нас</p>
+        </div>
+        <div class="footer__section">
+            <ul class="foouter__navmenu">
+                <li class="foouter__navmenu-el"><a href="index.html" class="footer__navmenu-link">Главная</a></li>
+                <li class="foouter__navmenu-el"><a href="register.html" class="footer__navmenu-link">Регистрация</a>
+                </li>
+                <li class="foouter__navmenu-el"><a href="login.html" class="footer__navmenu-link">Авторизация</a></li>
+                <li class="foouter__navmenu-el"><a href="profile.html" class="footer__navmenu-link">Личный кабинет</a>
+                </li>
+                <li class="foouter__navmenu-el"><a href="index.html#search" class="footer__navmenu-link">Поиск</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

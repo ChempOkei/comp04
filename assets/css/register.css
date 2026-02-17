@@ -1,0 +1,78 @@
+/* Стили Регистрация */
+.register {
+    background-color: #1A2238;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+}
+
+.register__form {
+    background-color: #0F1523;
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 20px;
+    height: 500px;
+    width: 50%;
+    align-items: center;
+    justify-content: center
+}
+
+.register__form-title {
+    color: #FF6B35;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', Times, serif;
+    border-bottom: 2px solid #FF6B35;
+    width: 50%;
+    text-align: center;
+    
+
+}
+
+.register__form-main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    align-items: center
+}
+
+.register__form-input {
+    color: #FFFFFF;
+    padding: 7px;
+    border-radius: 15px;
+    background-color: #1A2238;
+    width: 100%;
+}
+
+.register__form-btn {
+    width: 50%;
+    padding: 10px;
+    background-color: #FF6B35;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.checkbox input {
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-text {
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+    color: #FFFFFF;
+}
